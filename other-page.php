@@ -44,7 +44,7 @@
                     <?php
 						
                      	if(!isset($_COOKIE['name'])){
-							echo "Persistent Theme cookie not found";
+							echo "Persistent Theme cookie not found <br>";
 							echo "Session Philosopher cookie not found";
 						}
 						else{
