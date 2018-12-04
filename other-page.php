@@ -42,7 +42,16 @@
                 <div class="mdl-card__supporting-text">
                     
                     <?php
-     
+						
+                     	if(!isset($_COOKIE['name'])){
+							echo "Persistent Theme cookie not found";
+							echo "Session Philosopher cookie not found";
+						}
+						else{
+							echo "The Persistent Theme cookie value is:	" .$_COOKIE['name'];
+							echo "The session Philosopher cookie value is: " .$_COOKIE['name2'];
+						} 
+						
                     ?> 
                     
                     
